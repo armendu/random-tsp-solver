@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace TSPSolver
+namespace BoxAndLineCrossover
 {
     class Program
     {
@@ -27,15 +27,23 @@ namespace TSPSolver
                 }
             }
 
-            var solver = new TspSolver(citiesInformation);
+            Console.Write("Enter alpha (0, 0.1, or 0.25): ");
+            string input = Console.ReadLine();
+
+            bool parseResult = double.TryParse(input, out double alpha);
+
+            if (!parseResult)
+                Environment.Exit(0);
+
+            var solver = new BoxAndLineSolver(citiesInformation, alpha);
             var result = solver.Solve();
-            Console.WriteLine($"The sum of the result is {result.Item1}");
+
+            Console.WriteLine($"The sum of the result is {result.Sum}");
             Console.WriteLine("The array of cities is:");
-            foreach (var item in result.Item2)
+            foreach (var item in result.Cities)
             {
                 Console.Write($"{item},");
             }
-
             Console.WriteLine("");
             Console.ReadKey();
         }

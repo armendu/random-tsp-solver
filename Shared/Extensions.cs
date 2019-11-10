@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace TSPSolver
+namespace Shared
 {
-    static class Extensions
+    public static class Extensions
     {
         public static IList<T> Shuffle<T>(this IList<T> list, Random rnd)
         {
@@ -19,6 +18,11 @@ namespace TSPSolver
             var temp = list[i];
             list[i] = list[j];
             list[j] = temp;
+        }
+
+        public static double GenerateDouble(this Random random, double minValue, double maxValue)
+        {
+            return random.NextDouble() * (maxValue - minValue) + minValue;
         }
     }
 }

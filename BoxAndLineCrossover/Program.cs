@@ -33,8 +33,12 @@ namespace BoxAndLineCrossover
             bool parseResult = double.TryParse(input, out double alpha);
 
             if (!parseResult)
+            {
+                Console.WriteLine("Please enter a valid value for alpha");
                 Environment.Exit(0);
+            }
 
+            Console.WriteLine($"Running box and line crossovers with alpha {alpha}...");
             var solver = new BoxAndLineSolver(citiesInformation, alpha);
             var result = solver.Solve();
 

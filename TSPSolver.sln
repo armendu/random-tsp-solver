@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSPSolver", "TSPSolver\TSPSolver.csproj", "{FDD01690-EDC1-420C-9670-7200AD358B52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxAndLineCrossover", "BoxAndLineCrossover\BoxAndLineCrossover.csproj", "{AA18E4B8-A0BD-46F4-83EE-DC81920ABAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxAndLineCrossover", "BoxAndLineCrossover\BoxAndLineCrossover.csproj", "{AA18E4B8-A0BD-46F4-83EE-DC81920ABAA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{14DE76C2-30A8-47FD-9C47-5E522E3F25B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{14DE76C2-30A8-47FD-9C47-5E522E3F25B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankBasedSelection", "RankBasedSelection\RankBasedSelection.csproj", "{954EEBC8-BFEE-4D25-9F9A-08DD686A6348}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{14DE76C2-30A8-47FD-9C47-5E522E3F25B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14DE76C2-30A8-47FD-9C47-5E522E3F25B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14DE76C2-30A8-47FD-9C47-5E522E3F25B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954EEBC8-BFEE-4D25-9F9A-08DD686A6348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954EEBC8-BFEE-4D25-9F9A-08DD686A6348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954EEBC8-BFEE-4D25-9F9A-08DD686A6348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954EEBC8-BFEE-4D25-9F9A-08DD686A6348}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
